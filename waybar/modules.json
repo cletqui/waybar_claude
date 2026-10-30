@@ -1,0 +1,26 @@
+{
+  "custom/claude": {
+    "exec": "$HOME/.config/waybar/claude/run.sh --watch show",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": [""]
+  },
+  "custom/claude-detail": {
+    "exec": "$HOME/.config/waybar/claude/run.sh --watch detail",
+    "hide-empty-text": true,
+    "return-type": "json"
+  },
+  "group/group-claude": {
+    "orientation": "inherit",
+    "drawer": {
+      "click-to-reveal": false,
+      "transition-duration": 200,
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "custom/claude",
+      "custom/separator",
+      "custom/claude-detail"
+    ]
+  }
+}
