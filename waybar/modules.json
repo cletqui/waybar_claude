@@ -19,7 +19,6 @@
     },
     "modules": [
       "custom/claude",
-      "custom/separator",
       "custom/claude-detail"
     ]
   }
