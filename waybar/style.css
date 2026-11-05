@@ -1,32 +1,29 @@
 #group-claude {
+  border-radius: 4px;
+  border: 2px solid alpha(@secondary, 0.55);
+  background-color: @surface_container;
+  color: @secondary;
   margin: 0px 2px;
 }
 
 #custom-claude,
 #custom-claude-detail {
-  border-radius: 4px;
-  border: 2px solid alpha(@primary, 0.55);
-  background-color: @surface_container;
   color: @primary;
-  margin: 0px 2px;
   padding: 0px 12px 0px 8px;
 }
 
 #custom-claude.stale,
 #custom-claude-detail.stale {
-  border-color: alpha(@secondary, 0.55);
   color: @secondary;
 }
 
 #custom-claude.warn,
 #custom-claude-detail.warn {
-  border-color: alpha(@inverse_primary, 0.55);
   color: @inverse_primary;
 }
 
 #custom-claude.crit,
 #custom-claude-detail.crit {
-  border-color: alpha(@error, 0.55);
   color: @error;
 }
 

@@ -31,6 +31,8 @@ Waybar config:
 "include": ["~/.config/waybar/claude/modules.json"]
 ```
 
+The group expects a `custom/separator` module (a `|` format) to exist, as in many configs; define one if you don't have it. Style:
+
 ```css
 @import "claude/style.css";
 ```
